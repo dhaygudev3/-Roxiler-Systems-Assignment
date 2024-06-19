@@ -100,27 +100,34 @@ To use the frontend application, follow the instructions below:
 ## Ensure the backend API is deployed and accessible.
 
 
-Clone the frontend repository to your local machine.
-Install the necessary dependencies using the package manager of your choice (e.g., npm or yarn).
-npm install or yarn install
-Features
-Transactions Table
-Select Month Dropdown
-Displays January to December months as options.
-Defaults to March month.
-Allows selecting a different month to display transactions.
-Transactions List
-Utilizes the transactions listing API to list transactions in a table.
-Displays transactions of the selected month irrespective of the year using the API.
-Search transaction box filters transactions based on title/description/price using the API.
-Clears the search box to display the initial list of transactions for the selected month using the API.
-Next and Previous buttons load the next and previous page data from the API.
-Transactions Statistics
-Displays total sale amount, total sold items, and total not sold items for the selected month.
-Fetches data from the created API to populate the statistics box.
-Transactions Bar Chart
-Displays a bar chart showing the price range and the number of items in that range for the selected month.
-Applies the selected month from the dropdown (above the table) to fetch data from the API.
+# Clone the frontend repository to your local machine.
+ 1. Install the necessary dependencies using the package manager of your choice (e.g., npm or yarn).
+ 2. npm install or yarn install
+
+# steps access frontend 
+1. clone the repository
+2. cd frontend-ass
+3. npm i
+4. npm start
+
+   ## url : localhost:3000
+# Features
+1. Transactions Table
+2. Select Month Dropdown
+3. Displays January to December months as options.
+4. Defaults to March month.
+5. Allows selecting a different month to display transactions.
+6. Transactions List
+7. Utilizes the transactions listing API to list transactions in a table.
+8. Displays transactions of the selected month irrespective of the year using the API.
+9. Search transaction box filters transactions based on title/description/price using the API.
+10. Clears the search box to display the initial list of transactions for the selected month using the API.
+11 .Transactions Statistics
+12. Displays total sale amount, total sold items, and total not sold items for the selected month.
+13. Fetches data from the created API to populate the statistics box.
+14. Transactions Bar Chart
+15. Displays a bar chart showing the price range and the number of items in that range for the selected month.
+16 .Applies the selected month from the dropdown (above the table) to fetch data from the API.
 Enjoy using the product transaction management system!
 
 
