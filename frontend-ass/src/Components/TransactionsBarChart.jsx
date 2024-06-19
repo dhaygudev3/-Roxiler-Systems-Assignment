@@ -10,7 +10,7 @@ const TransactionsBarChart = (props) => {
     useEffect(() => {
         const getBarChartData = async () => {
             try {
-                // Convert month name to number
+              
                 const monthNumber = convertMonthToNum[selectedMonth.toLowerCase()];
                 const response = await axios.get(`http://localhost:8080/era/bar-chart?month=${monthNumber}`);
                 setBarChartData(response.data);

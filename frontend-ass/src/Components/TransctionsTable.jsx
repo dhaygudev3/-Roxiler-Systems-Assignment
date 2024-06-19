@@ -39,7 +39,7 @@ const TransactionsTable = () => {
     const [transactionList, setTransactionList] = useState([]);
     const [input, setInput] = useState('');
     const [selMonth, setSelMonth] = useState(months[2].name);
-    const [isLoading, setIsLoading] = useState(false); // Add loading state if needed
+    const [isLoading, setIsLoading] = useState(false); 
 
     useEffect(() => {
         const getTransactions = async () => {
@@ -47,15 +47,15 @@ const TransactionsTable = () => {
                 const response = await axios.get('http://localhost:8080/era/transactions', {
                     params: {
                         search: input,
-                        month: months.findIndex(m => m.name === selMonth) + 1, // Adjust to match backend's month format
+                        month: months.findIndex(m => m.name === selMonth) + 1,
                         page: page,
-                        perPage: 10 // Adjust perPage as needed
+                        perPage: 10 
                     }
                 });
-                setTransactionList(response.data); // Assuming response.data is the array of transactions
+                setTransactionList(response.data); 
             } catch (error) {
                 console.error('Error fetching transactions:', error);
-                // Handle error state or show error message
+                
             }
         };
 

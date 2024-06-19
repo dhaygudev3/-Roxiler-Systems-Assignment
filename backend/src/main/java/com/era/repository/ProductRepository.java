@@ -19,11 +19,7 @@ public interface ProductRepository extends MongoRepository<Product, String> {
     @Query("{ '$expr': { '$eq': [ { '$month': '$dateOfSale' }, ?0 ] } }")
     List<Product> findProductsByMonth(int month);
     
-    @Query("{ '$and': [ { 'sold': true }, { '$expr': { '$eq': [ { '$month': '$dateOfSale' }, ?0 ] } } ] }")
-    long countSoldItemsByMonth(int month);
-
-    @Query("{ '$and': [ { 'sold': false }, { '$expr': { '$eq': [ { '$month': '$dateOfSale' }, ?0 ] } } ] }")
-    long countNotSoldItemsByMonth(int month);
+    
 
     @Query("{ '$expr': { '$eq': [ { '$month': '$dateOfSale' }, ?0 ] } }")
     List<Product> searchProducts(int month);
